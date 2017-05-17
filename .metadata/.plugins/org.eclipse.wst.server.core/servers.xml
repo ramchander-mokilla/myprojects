@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servers>
+  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/Tomcat v8.0 Server at localhost-config" deployDir="wtpwebapps" hostname="localhost" id="Tomcat v8.0 Server at localhost" name="Tomcat v8.0 Server at localhost" runtime-id="Apache Tomcat v8.0" server-type="org.eclipse.jst.server.tomcat.80" server-type-id="org.eclipse.jst.server.tomcat.80" start-timeout="45" stop-timeout="15" testEnvironment="true" timestamp="14">
+    <list key="modules" value0="ServletDemo1::org.eclipse.jst.jee.server:ServletDemo1::jst.web::3.1" value1="MyFirstServlet::org.eclipse.jst.jee.server:MyFirstServlet::jst.web::3.1" value2="AjaxDemo::org.eclipse.jst.jee.server:AjaxDemo::jst.web::3.1" value3="JAXWSDemoClient::org.eclipse.jst.jee.server:JAXWSDemoClient::jst.web::3.1" value4="JAXRS::org.eclipse.jst.jee.server:JAXRS::jst.web::3.1" value5="JAXWS::org.eclipse.jst.jee.server:JAXWS::jst.web::3.1" value6="Maven_Practice::org.eclipse.jst.j2ee.server:Maven_Practice::jst.web::2.3"/>
+  </server>
+</servers>

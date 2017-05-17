@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [All Tests]">
+  <test name="Set 1(failed)">
+    <classes>
+      <class name="testNG.Annotations_1">
+        <methods>
+          <include name="Before_Suite"/>
+          <include name="Before_Test"/>
+          <include name="After_Method"/>
+          <include name="After_Test"/>
+          <include name="Before_Method"/>
+        </methods>
+      </class> <!-- testNG.Annotations_1 -->
+      <class name="testNG.Test1">
+        <methods>
+          <include name="Login"/>
+        </methods>
+      </class> <!-- testNG.Test1 -->
+      <class name="testNG.Test2">
+        <methods>
+          <include name="MyTest"/>
+        </methods>
+      </class> <!-- testNG.Test2 -->
+      <class name="testNG.Annotations_2">
+        <methods>
+          <include name="After_Test_3"/>
+          <include name="After_Method_3"/>
+          <include name="Before_Test_3"/>
+          <include name="Before_Method_3"/>
+        </methods>
+      </class> <!-- testNG.Annotations_2 -->
+    </classes>
+  </test> <!-- Set 1(failed) -->
+</suite> <!-- Failed suite [All Tests] -->

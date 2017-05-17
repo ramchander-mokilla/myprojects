@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+		"-//Hibernate/Hibernate Mapping DTD//EN"
+ 		"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping> 
+	<class name="hibernate.CA" table="CA" discriminator-value="CA">
+		<id name="id" column="mid">
+			<generator class="increment"/>
+		</id>
+		<discriminator column="type" type="string"/>
+		<property name="a" column="a"/>
+		<subclass name="hibernate.CB" discriminator-value="CB">
+			<property name="b" column="b"/>
+			<subclass name="hibernate.CC" discriminator-value="CC">
+				<property name="c" column="c"/>
+			</subclass>
+		</subclass>		
+	</class>	
+</hibernate-mapping>

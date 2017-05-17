@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+	
+	<bean id="emp1" class="springdemo.Employee">
+		<property name="empId" value="1241"/>
+		<property name="name" value="Eric Hver"/>
+		<property name="salary" value="123000"/>	
+	</bean>
+	
+	<bean id="emp2" class="springdemo.Employee">
+		<property name="empId" value="12"/>
+		<property name="name" value="Gemma Watson"/>
+		<property name="salary" value="76518"/>	
+	</bean>
+	
+	<bean id="emp3" class="springdemo.Employee" init-method="myInit" destroy-method="myDestroy">
+		<property name="empId" value="785"/>
+		<property name="name" value="John Gillen"/>
+		<property name="salary" value="98000"/>
+		<!-- constructor dependency injection -->
+		<!-- <constructor-arg ref="address"/> -->
+		<!-- setter injection -->
+		<property name="address" ref="address"/>
+		<property name="qualifications">
+			<list>
+				<value>B.Tech</value>
+				<value>M.Tech</value>
+				<value>MS</value>
+			</list>
+		</property>			
+	</bean>
+	
+	<bean class="springdemo.MyBeanProcessor"/>
+	
+	<bean id="cEmp103" class="springdemo.ContractEmployee" parent="emp3">
+		<property name="payPerHour" value="48"/>
+		<property name="rating" value="2"/>	
+	</bean>
+	
+	<bean id="address" class="springdemo.Address">
+		<property name="city" value="HuntValley"/>
+		<property name="zipCode" value="21030"/>	
+	</bean>
+	
+	<!-- below will take care of dependency injection and config for classes CA and CB -->
+	<context:annotation-config/>
+	<bean id="ca" class="springdemo.CA"/>
+	<bean id="cb" class="springdemo.CB"/>
+	<!-- Alternatively, we can use the below statement to bring up the same autowiring -->
+	<!-- <bean id="ca" class="springdemo.CA" autowire="byName"/>  -->
+	
+</beans>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="All Tests">
+	<test name="Set 1">
+		<parameter name="UserID" value="John"/>
+		<parameter name="Grade" value="A"/>
+		<classes>
+			<class name="testNG.DataDrivenTest_2"/>
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,14 @@
+package springhibernate;
+
+import org.springframework.core.io.ClassPathResource;
+import org.springframework.core.io.Resource;
+
+public class DBOperations {
+
+	public static void main(String[] args) {
+		
+		Resource r =new ClassPathResource("bean.xml");
+
+	}
+
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="45144" started-at="2017-04-12T22:13:42Z" finished-at="2017-04-12T22:14:27Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="45144" started-at="2017-04-12T22:13:42Z" finished-at="2017-04-12T22:14:27Z">
+      <class name="testcases.HomePageTests">
+        <test-method status="PASS" signature="testSearchBoxFunctionality()[pri:0, instance:testcases.HomePageTests@2a5ca609]" name="testSearchBoxFunctionality" duration-ms="23139" started-at="2017-04-12T18:13:42Z" finished-at="2017-04-12T18:14:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchBoxFunctionality -->
+        <test-method status="PASS" signature="testTrackOrdersFunctionality()[pri:0, instance:testcases.HomePageTests@2a5ca609]" name="testTrackOrdersFunctionality" duration-ms="21969" started-at="2017-04-12T18:14:05Z" finished-at="2017-04-12T18:14:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTrackOrdersFunctionality -->
+      </class> <!-- testcases.HomePageTests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,0 +1,24 @@
+package springhibernate;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+//Note: Ensure the MySQL DB instance is running (from XAMPP control panel) before running this program
+public class DBOperations {
+
+	public static void main(String[] args) {
+		
+		ApplicationContext context = new ClassPathXmlApplicationContext("junioremployeebean.xml");
+		JuniorEmployeeDAO dao = context.getBean("dao",JuniorEmployeeDAO.class);
+		
+		JuniorEmployee jEmp = new JuniorEmployee();
+		jEmp.setId(10);
+		jEmp.setName("Roger");
+		jEmp.setSalary(124000);
+				
+		dao.saveEmployee(jEmp);
+		System.out.println("\nRecord inserted");
+		//close the application context
+		((ClassPathXmlApplicationContext)context).close();
+	}
+}

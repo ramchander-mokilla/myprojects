@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+		"-//Hibernate/Hibernate Mapping DTD//EN"
+ 		"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping> 
+	<class name="hibernate.Student" table="Student">
+		<meta attribute="class-description">
+			This class contains Student details
+		</meta>
+		<id name="id" column="id">
+			<generator class="increment"/>
+		</id>
+		<property name="rollNum" column="rollNum" type="int"/>
+		<property name="name" column="name" type="string"/>
+		<property name="address" column="address" type="string"/>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="2" total="18" passed="16">
+  <reporter-output>
+  </reporter-output>
+  <suite name="All Tests" duration-ms="8099" started-at="2017-04-10T22:54:54Z" finished-at="2017-04-10T22:55:02Z">
+    <groups>
+      <group name="Priority1">
+        <method signature="Annotations_2.TestMethod10()[pri:0, instance:testNG.Annotations_2@2fc14f68]" name="TestMethod10" class="testNG.Annotations_2"/>
+        <method signature="Annotations_2.TestMethod11()[pri:0, instance:testNG.Annotations_2@2fc14f68]" name="TestMethod11" class="testNG.Annotations_2"/>
+      </group> <!-- Priority1 -->
+      <group name="Priority2">
+        <method signature="Annotations_2.TestMethod8()[pri:0, instance:testNG.Annotations_2@2fc14f68]" name="TestMethod8" class="testNG.Annotations_2"/>
+        <method signature="Annotations_2.TestMethod9()[pri:0, instance:testNG.Annotations_2@2fc14f68]" name="TestMethod9" class="testNG.Annotations_2"/>
+      </group> <!-- Priority2 -->
+    </groups>
+    <test name="Set 1" duration-ms="8099" started-at="2017-04-10T22:54:54Z" finished-at="2017-04-10T22:55:02Z">
+      <class name="testNG.Test2">
+        <test-method status="PASS" signature="MyTest()[pri:0, instance:testNG.Test2@233c0b17]" name="MyTest" duration-ms="3043" started-at="2017-04-10T18:54:59Z" finished-at="2017-04-10T18:55:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MyTest -->
+      </class> <!-- testNG.Test2 -->
+      <class name="testNG.Test1">
+        <test-method status="PASS" signature="Login()[pri:0, instance:testNG.Test1@61a52fbd]" name="Login" duration-ms="5003" started-at="2017-04-10T18:54:54Z" finished-at="2017-04-10T18:54:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+      </class> <!-- testNG.Test1 -->
+      <class name="testNG.DataDrivenTest_1">
+        <test-method status="PASS" signature="displayStudentProfile(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testNG.DataDrivenTest_1@591f989e]" name="displayStudentProfile" duration-ms="0" started-at="2017-04-10T18:55:02Z" data-provider="provideTestData" finished-at="2017-04-10T18:55:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Rick]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[58]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[B]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- displayStudentProfile -->
+        <test-method status="PASS" signature="displayStudentProfile(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testNG.DataDrivenTest_1@591f989e]" name="displayStudentProfile" duration-ms="0" started-at="2017-04-10T18:55:02Z" data-provider="provideTestData" finished-at="2017-04-10T18:55:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Kelly]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[89]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[A+]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- displayStudentProfile -->
+        <test-method status="PASS" signature="displayStudentProfile(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testNG.DataDrivenTest_1@591f989e]" name="displayStudentProfile" duration-ms="0" started-at="2017-04-10T18:55:02Z" data-provider="provideTestData" finished-at="2017-04-10T18:55:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[John]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[78]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[A]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- displayStudentProfile -->
+      </class> <!-- testNG.DataDrivenTest_1 -->
+      <class name="testNG.Annotations_2">
+        <test-method status="PASS" signature="Before_Method_3()[pri:0, instance:testNG.Annotations_2@2fc14f68]" name="Before_Method_3" is-config="true" duration-ms="1" started-at="2017-04-10T18:54:59Z" finished-at="2017-04-10T18:54:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Before_Method_3 -->
+        <test-method status="PASS" signature="After_Method_3()[pri:0, instance:testNG.Annotations_2@2fc14f68]" name="After_Method_3" is-config="true" duration-ms="0" started-at="2017-04-10T18:54:59Z" finished-at="2017-04-10T18:54:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- After_Method_3 -->
+        <test-method status="PASS" signature="TestMethod10()[pri:0, instance:testNG.Annotations_2@2fc14f68]" name="TestMethod10" duration-ms="0" started-at="2017-04-10T18:54:59Z" finished-at="2017-04-10T18:54:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestMethod10 -->
+        <test-method status="PASS" signature="Before_Method_3()[pri:0, instance:testNG.Annotations_2@2fc14f68]" name="Before_Method_3" is-config="true" duration-ms="0" started-at="2017-04-10T18:54:59Z" finished-at="2017-04-10T18:54:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Before_Method_3 -->
+        <test-method status="PASS" signature="TestMethod11()[pri:0, instance:testNG.Annotations_2@2fc14f68]" name="TestMethod11" duration-ms="0" started-at="2017-04-10T18:54:59Z" finished-at="2017-04-10T18:54:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestMethod11 -->
+        <test-method status="PASS" signature="After_Method_3()[pri:0, instance:testNG.Annotations_2@2fc14f68]" name="After_Method_3" is-config="true" duration-ms="0" started-at="2017-04-10T18:54:59Z" finished-at="2017-04-10T18:54:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- After_Method_3 -->
+        <test-method status="PASS" signature="Before_Method_3()[pri:0, instance:testNG.Annotations_2@2fc14f68]" name="Before_Method_3" is-config="true" duration-ms="1" started-at="2017-04-10T18:54:59Z" finished-at="2017-04-10T18:54:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Before_Method_3 -->
+        <test-method status="PASS" signature="After_Method_3()[pri:0, instance:testNG.Annotations_2@2fc14f68]" name="After_Method_3" is-config="true" duration-ms="0" started-at="2017-04-10T18:54:59Z" finished-at="2017-04-10T18:54:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- After_Method_3 -->
+        <test-method status="PASS" signature="TestMethod8()[pri:0, instance:testNG.Annotations_2@2fc14f68]" name="TestMethod8" duration-ms="0" started-at="2017-04-10T18:54:59Z" finished-at="2017-04-10T18:54:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestMethod8 -->
+        <test-method status="PASS" signature="TestMethod9()[pri:0, instance:testNG.Annotations_2@2fc14f68]" name="TestMethod9" duration-ms="0" started-at="2017-04-10T18:54:59Z" finished-at="2017-04-10T18:54:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestMethod9 -->
+        <test-method status="PASS" signature="After_Method_3()[pri:0, instance:testNG.Annotations_2@2fc14f68]" name="After_Method_3" is-config="true" duration-ms="0" started-at="2017-04-10T18:54:59Z" finished-at="2017-04-10T18:54:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- After_Method_3 -->
+        <test-method status="PASS" signature="Before_Method_3()[pri:0, instance:testNG.Annotations_2@2fc14f68]" name="Before_Method_3" is-config="true" duration-ms="0" started-at="2017-04-10T18:54:59Z" finished-at="2017-04-10T18:54:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Before_Method_3 -->
+      </class> <!-- testNG.Annotations_2 -->
+      <class name="testNG.Annotations_1">
+        <test-method status="PASS" signature="Before_Suite()[pri:0, instance:testNG.Annotations_1@4b6995df]" name="Before_Suite" is-config="true" duration-ms="13" started-at="2017-04-10T18:54:54Z" finished-at="2017-04-10T18:54:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Before_Suite -->
+        <test-method status="PASS" signature="Before_Test()[pri:0, instance:testNG.Annotations_1@4b6995df]" name="Before_Test" is-config="true" duration-ms="1" started-at="2017-04-10T18:54:54Z" finished-at="2017-04-10T18:54:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Before_Test -->
+        <test-method status="PASS" signature="Before_Test_3()[pri:0, instance:testNG.Annotations_2@2fc14f68]" name="Before_Test_3" is-config="true" duration-ms="0" started-at="2017-04-10T18:54:54Z" finished-at="2017-04-10T18:54:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Before_Test_3 -->
+        <test-method status="PASS" signature="Before_Method()[pri:0, instance:testNG.Annotations_1@4b6995df]" name="Before_Method" is-config="true" duration-ms="1" started-at="2017-04-10T18:54:54Z" finished-at="2017-04-10T18:54:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Before_Method -->
+        <test-method status="PASS" signature="TestMethod1()[pri:0, instance:testNG.Annotations_1@4b6995df]" name="TestMethod1" duration-ms="0" started-at="2017-04-10T18:54:54Z" finished-at="2017-04-10T18:54:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestMethod1 -->
+        <test-method status="PASS" signature="After_Method()[pri:0, instance:testNG.Annotations_1@4b6995df]" name="After_Method" is-config="true" duration-ms="0" started-at="2017-04-10T18:54:54Z" finished-at="2017-04-10T18:54:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- After_Method -->
+        <test-method status="PASS" signature="After_Method()[pri:0, instance:testNG.Annotations_1@4b6995df]" name="After_Method" is-config="true" duration-ms="1" started-at="2017-04-10T18:54:54Z" finished-at="2017-04-10T18:54:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- After_Method -->
+        <test-method status="PASS" signature="Before_Method()[pri:0, instance:testNG.Annotations_1@4b6995df]" name="Before_Method" is-config="true" duration-ms="0" started-at="2017-04-10T18:54:54Z" finished-at="2017-04-10T18:54:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Before_Method -->
+        <test-method status="PASS" signature="TestMethod2()[pri:0, instance:testNG.Annotations_1@4b6995df]" name="TestMethod2" duration-ms="0" started-at="2017-04-10T18:54:54Z" finished-at="2017-04-10T18:54:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestMethod2 -->
+        <test-method status="PASS" signature="TestMethod3()[pri:0, instance:testNG.Annotations_1@4b6995df]" name="TestMethod3" duration-ms="0" started-at="2017-04-10T18:54:54Z" finished-at="2017-04-10T18:54:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestMethod3 -->
+        <test-method status="PASS" signature="Before_Method()[pri:0, instance:testNG.Annotations_1@4b6995df]" name="Before_Method" is-config="true" duration-ms="0" started-at="2017-04-10T18:54:54Z" finished-at="2017-04-10T18:54:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Before_Method -->
+        <test-method status="PASS" signature="After_Method()[pri:0, instance:testNG.Annotations_1@4b6995df]" name="After_Method" is-config="true" duration-ms="0" started-at="2017-04-10T18:54:54Z" finished-at="2017-04-10T18:54:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- After_Method -->
+        <test-method status="PASS" signature="After_Test()[pri:0, instance:testNG.Annotations_1@4b6995df]" name="After_Test" is-config="true" duration-ms="1" started-at="2017-04-10T18:55:02Z" finished-at="2017-04-10T18:55:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- After_Test -->
+        <test-method status="PASS" signature="After_Test_3()[pri:0, instance:testNG.Annotations_2@2fc14f68]" name="After_Test_3" is-config="true" duration-ms="0" started-at="2017-04-10T18:55:02Z" finished-at="2017-04-10T18:55:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- After_Test_3 -->
+      </class> <!-- testNG.Annotations_1 -->
+      <class name="testNG.DependencyAnnotations">
+        <test-method status="PASS" signature="TestMethod5()[pri:0, instance:testNG.DependencyAnnotations@66048bfd]" name="TestMethod5" duration-ms="11" started-at="2017-04-10T18:54:54Z" finished-at="2017-04-10T18:54:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestMethod5 -->
+        <test-method status="PASS" signature="TestMethod4()[pri:0, instance:testNG.DependencyAnnotations@66048bfd]" name="TestMethod4" duration-ms="0" started-at="2017-04-10T18:54:59Z" depends-on-methods="testNG.DependencyAnnotations.TestMethod5" finished-at="2017-04-10T18:54:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestMethod4 -->
+        <test-method status="PASS" signature="TestMethod6()[pri:0, instance:testNG.DependencyAnnotations@66048bfd]" name="TestMethod6" duration-ms="0" started-at="2017-04-10T18:55:02Z" depends-on-methods="testNG.DependencyAnnotations.TestMethod4" finished-at="2017-04-10T18:55:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestMethod6 -->
+      </class> <!-- testNG.DependencyAnnotations -->
+      <class name="testNG.Global_Parameters">
+        <test-method status="PASS" signature="Login()[pri:0, instance:testNG.Global_Parameters@445b84c0]" name="Login" duration-ms="1" started-at="2017-04-10T18:55:02Z" finished-at="2017-04-10T18:55:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+      </class> <!-- testNG.Global_Parameters -->
+    </test> <!-- Set 1 -->
+  </suite> <!-- All Tests -->
+</testng-results>

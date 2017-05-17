@@ -1,0 +1,46 @@
+package springjdbc;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+//Note: Ensure the MySQL DB instance is running (from XAMPP control panel) before running this program
+public class DBOperations {
+
+	public static void main(String[] args) {
+		
+		ApplicationContext context = new ClassPathXmlApplicationContext("Beans.xml");
+		StudentJDBCTemplate studentJDBCTemplate = context.getBean("studentJDBCTemplate", StudentJDBCTemplate.class);
+		
+		//create records in the table
+		studentJDBCTemplate.createStudent(1, "Doug", 29);
+		studentJDBCTemplate.createStudent(2, "Eric", 24);
+		studentJDBCTemplate.createStudent(3, "Henry", 26);
+		
+		//display list of student records
+		studentJDBCTemplate.listStudents();
+		
+		//delete record with id=2
+		studentJDBCTemplate.deleteStudent(2);
+		
+		//display list of student records
+		studentJDBCTemplate.listStudents();
+		
+		//display the record with id=3
+		studentJDBCTemplate.getStudent(3);
+		
+		//update the record with id=3
+		studentJDBCTemplate.updateStudent(3, 30);
+		
+		//display the record with id=3
+		studentJDBCTemplate.getStudent(3);
+				
+		//delete all records
+		studentJDBCTemplate.deleteAllStudents();;
+		
+		//display list of student records
+		studentJDBCTemplate.listStudents();
+		
+		//close the application context
+		((ClassPathXmlApplicationContext)context).close();
+	}
+}

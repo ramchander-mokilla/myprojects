@@ -1,0 +1,5 @@
+package springhibernate;
+
+public class Client {
+
+}

@@ -1,0 +1,14 @@
+<html>
+<body>
+<h2>Hello World!</h2>
+</body>
+
+<%
+	for (int i=0; i<11; i++)
+	{
+		out.print("i square= "+i*i);
+		out.print("</br>");
+	}
+%>
+
+</html>

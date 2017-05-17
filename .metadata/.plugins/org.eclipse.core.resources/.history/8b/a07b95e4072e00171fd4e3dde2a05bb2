@@ -1,0 +1,51 @@
+package practice;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+class DBOperations{
+	
+	String url,username, password;
+	Connection connection;
+	
+	url = "jdbc:mysql://localhost/ram_test";
+	user = "root";
+	password = "";
+	
+	public DBOperations()
+	{
+		//Load the JDBC driver
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		}
+		
+		//Create connection
+		connection = DriverManager.getConnection(url, user, password);
+		
+		}
+	
+	void insertIntoDB(int id, int rollNum, String name, String address)
+	{
+		try{
+			
+			
+			
+		}catch (SQLException sql){
+			sql.printStackTrace();
+		}catch (Exception e){
+			e.printStackTrace();
+		}
+		
+	}
+}
+
+public class JDBCDemo {
+
+	public static void main(String[] args) {
+	
+	}
+
+}

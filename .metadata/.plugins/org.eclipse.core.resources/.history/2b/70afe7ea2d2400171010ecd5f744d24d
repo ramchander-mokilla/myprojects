@@ -1,0 +1,60 @@
+package collections;
+
+import java.util.Hashtable;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
+
+//Implementation of Map interface
+public class HashTableExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Hashtable<Integer,String> hashtable1 = new Hashtable<Integer, String>();
+		
+		hashtable1.put(0, "John");
+		hashtable1.put(1, "Jack");
+		hashtable1.put(2, "Doug");
+		hashtable1.put(3, "Ken");
+		
+		System.out.println("..................");
+		System.out.println(hashtable1.get(0));
+		System.out.println(hashtable1.get(1));
+		System.out.println(hashtable1.get(2));
+		System.out.println(hashtable1.get(3));
+		System.out.println("..................");
+		
+		Set<Entry<Integer, String>> set = hashtable1.entrySet();
+		Iterator<?> setIterator = set.iterator();
+		while(setIterator.hasNext())
+		{
+			Map.Entry mapEntry = (Map.Entry)setIterator.next(); 
+			System.out.println(mapEntry);
+			System.out.println(mapEntry.getKey());
+			System.out.println(mapEntry.getValue());
+			System.out.println("\n");
+		}
+		
+		System.out.println("..................");
+		
+		Hashtable<String,String> hashtable2 = new Hashtable<String,String>();
+		
+		hashtable2.put("User 1", "John");
+		hashtable2.put("User 2", "Jack");
+		hashtable2.put("User 3", "Doug");
+		hashtable2.put("User 4", "Ken");
+		
+		System.out.println(hashtable2.get(1));
+		System.out.println(hashtable2.get(2));
+		System.out.println(hashtable2.get(3));
+		System.out.println(hashtable2.get(4));
+		
+		System.out.println(hashtable2.get("User 0"));
+		System.out.println(hashtable2.get("User 1"));
+		System.out.println(hashtable2.get("User 2"));
+		System.out.println(hashtable2.get("User 3"));
+		
+	}
+}

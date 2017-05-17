@@ -1,0 +1,13 @@
+INDEX VERSION 1.3+C:\Users\Mokilla-Win7\workspace\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+1840111642.index
+2006197009.index
+1640358370.index
+1376839483.index
+3458983480.index
+3128097590.index
+3810874895.index
+3852513127.index
+459397772.index
+3116304682.index
+2656215626.index
+3527475546.index

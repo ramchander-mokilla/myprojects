@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>My Page</title>
+
+<script type="text/javascript">
+
+	var request;
+	
+	function sendRequest(){
+	
+		if(window.XMLHttpRequest)
+		{
+			request = new XMLHttpRequest(); //for IE7 and rest of the browsers
+		}
+		else
+		{
+			request = new ActiveXObject("Microsoft.XMLHTTP"); //for Windows IE5 or IE6 support	
+		}
+
+		var number = document.tableForm.txtNum.value;		
+	}
+	
+</script>
+
+</head>
+<body>
+Printing the table of a number	
+<form action="tableForm">
+	<input type="text" name="txtNum" placeholder="Enter a number">
+	<br/><br/>
+	<input type="button" value="Show Table" onclick="sendRequest()">	
+</form>
+
+<span id="data">
+
+</span>
+	
+</body>
+</html>

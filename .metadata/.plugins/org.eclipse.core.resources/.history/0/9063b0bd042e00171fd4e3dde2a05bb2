@@ -1,0 +1,32 @@
+package practice;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+
+class DBOperations{
+	
+	String username, password;
+	Connection connection;
+	
+	void insertIntoDB(int id, int rollNum, String name, String address)
+	{
+		try{
+			
+			
+			
+		}catch (SQLException sql){
+			sql.printStackTrace();
+		}catch (Exception e){
+			e.printStackTrace();
+		}
+		
+	}
+}
+
+public class JDBCDemo {
+
+	public static void main(String[] args) {
+	
+	}
+
+}

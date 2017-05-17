@@ -1,0 +1,49 @@
+package collections;
+
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Iterator;
+
+//Implementation of Map interface
+public class HashMapExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		HashMap<Integer,String> hashmap = new HashMap<Integer, String>();
+		
+		hashmap.put(0, "John");
+		hashmap.put(1, "Jack");
+		hashmap.put(2, "Doug");
+		hashmap.put(3, "Ken");
+		
+		System.out.println(hashmap.get(0));
+		
+		/*
+		Iterator<String> iterator = hashset.iterator();
+		System.out.println("...............");
+		System.out.println(iterator.next());
+		while(iterator.hasNext())
+		{
+			System.out.println(iterator.next());
+		}
+		System.out.println("...............");
+		
+		System.out.println(hashset);
+		System.out.println(hashset.size());
+		
+		hashset.remove("John");
+		System.out.println(hashset);
+		System.out.println(hashset.size());
+		
+		System.out.println(hashset.contains("R"));
+		System.out.println(hashset.contains("Ram"));
+		System.out.println(hashset.isEmpty());
+		
+		hashset.clear();
+		System.out.println(hashset);
+		System.out.println(hashset.size());		
+		System.out.println(hashset.isEmpty());
+		*/
+	}
+}

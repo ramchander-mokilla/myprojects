@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+		"-//Hibernate/Hibernate Mapping DTD//EN"
+ 		"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping> 
+	<class name="hibernate.Manager" table="Manager">
+		<id name="id" column="mid">
+			<generator class="increment"/>
+		</id>
+		<property name="name" column="mname"/>
+		<property name="email" column="memail"/>
+		<list name="certificates" cascade="all">
+			<key column="managerid"/>
+			<list-index column="idx"/> 
+			<one-to-many class="hibernate.Certificate"/>
+		</list>
+	</class>
+	
+	<class name="hibernate.Certificate" table="Certificate">
+		<id name="id" column="cid">
+			<generator class="increment"/>
+		</id>
+		<property name="name" column="cname"/>
+	</class>
+</hibernate-mapping>

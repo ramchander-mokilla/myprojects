@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="44189" started-at="2017-04-11T19:29:27Z" finished-at="2017-04-11T19:30:11Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="44189" started-at="2017-04-11T19:29:27Z" finished-at="2017-04-11T19:30:11Z">
+      <class name="Framework.InvokeFirefox">
+        <test-method status="PASS" signature="RunTest()[pri:0, instance:Framework.InvokeFirefox@61832929]" name="RunTest" duration-ms="44130" started-at="2017-04-11T15:29:27Z" finished-at="2017-04-11T15:30:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RunTest -->
+      </class> <!-- Framework.InvokeFirefox -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

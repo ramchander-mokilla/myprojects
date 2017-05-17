@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Student Search</title>
+
+<script type="text/javascript">
+
+	var request;
+	
+	function sendRequest(){
+	
+		if(window.XMLHttpRequest)
+		{
+			request = new XMLHttpRequest(); //for IE7 and rest of the browsers
+		}
+		else
+		{
+			request = new ActiveXObject("Microsoft.XMLHTTP"); //for Windows IE5 or IE6 support	
+		}
+
+		var name = document.searchForm.txtName.value;
+		var url = "ProcessDB.jsp?name="+name;
+		
+		try{
+			
+			request.onreadystatechange = getResult;
+			request.open("GET", url, true); //asynchronous request
+			request.send();
+			
+		}catch(e){
+			alert("Exception occured");
+		}
+	}
+	
+	function getResult(){
+		
+		if(request.readystate == 4){
+			
+			var res = request.responseText;
+			document.getElementById("data").innerHTML = res;
+		}
+	}
+	
+</script>
+</head>
+<body>
+Search a Student	
+<form action="searchForm">
+	<input type="text" name="txtName" placeholder="Enter student name" onkeyup="sendRequest()">
+</form>
+
+<span id="data">
+
+</span>
+	
+</body>
+</html>
